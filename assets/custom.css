@@ -1,0 +1,127 @@
+/* =========================================================
+   Global Streamlit polish
+   ========================================================= */
+
+.block-container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    max-width: 1500px;
+}
+
+/* Hide default Streamlit clutter */
+#MainMenu {
+    visibility: hidden;
+}
+
+footer {
+    visibility: hidden;
+}
+
+
+/* Sidebar */
+[data-testid="stSidebar"] {
+    background-color: #1E293B;
+    border-right: 1px solid #334155;
+}
+
+[data-testid="stSidebar"] h2,
+[data-testid="stSidebar"] h3 {
+    color: #F8FAFC;
+}
+
+[data-testid="stSidebar"] label {
+    color: #E5E7EB;
+}
+
+/* Main typography */
+h1, h2, h3, h4 {
+    letter-spacing: -0.03em;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Inputs */
+.stTextInput input,
+.stTextArea textarea,
+.stNumberInput input {
+    background-color: #0F172A;
+    color: #F8FAFC;
+    border: 1px solid #334155;
+    border-radius: 10px;
+}
+
+.stTextInput input:focus,
+.stTextArea textarea:focus,
+.stNumberInput input:focus {
+    border-color: #38BDF8;
+    box-shadow: 0 0 0 1px #38BDF8;
+}
+
+/* Buttons */
+.stButton > button,
+.stDownloadButton > button,
+.stFormSubmitButton > button {
+    background: linear-gradient(135deg, #0284C7, #0EA5E9);
+    color: #F8FAFC;
+    border: 1px solid #38BDF8;
+    border-radius: 10px;
+    padding: 0.65rem 1rem;
+    font-weight: 700;
+    transition: all 0.15s ease-in-out;
+}
+
+.stButton > button:hover,
+.stDownloadButton > button:hover,
+.stFormSubmitButton > button:hover {
+    background: linear-gradient(135deg, #0369A1, #0284C7);
+    border-color: #7DD3FC;
+    color: #FFFFFF;
+}
+
+/* Radio buttons */
+.stRadio > div {
+    gap: 0.7rem;
+}
+
+/* Expanders */
+.streamlit-expanderHeader {
+    background-color: #0F172A;
+    border-radius: 10px;
+}
+
+/* Alerts */
+[data-testid="stAlert"] {
+    border-radius: 12px;
+    border: 1px solid rgba(148, 163, 184, 0.25);
+}
+
+/* Dataframes */
+[data-testid="stDataFrame"] {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Horizontal rule */
+hr {
+    border-color: #334155;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Caption text */
+[data-testid="stCaptionContainer"] {
+    color: #94A3B8;
+}
+
+/* Metric spacing fix */
+[data-testid="column"] {
+    min-width: 0;
+}
+
+/* Prevent massive top whitespace on some screens */
+.main .block-container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
